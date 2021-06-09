@@ -6,7 +6,9 @@ import './Login.css'
 function Login() {
     const history =useHistory();
     const [email, setemail] = useState('');
-    const [password, setPassword] = useState('')
+    const [password, setPassword] = useState('');
+
+    
     
     const signin = e =>{
         e.preventDefault();
@@ -53,7 +55,7 @@ function Login() {
                         e =>setPassword(e.target.value)
                     }/>
 
-                    <button className="login__signInButton" onClick ={signin}>Sign In</button>
+                    <button className="login__signInButton" type="submit" onClick ={signin}>Sign In</button>
                 </form>
 
                 <p>
